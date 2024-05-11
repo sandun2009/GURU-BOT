@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
 
-global.owner = [['917605902011', 'GURU', true], ['6281255369012', 'Ash', true], ['']] //Number of owners
+global.owner = [['94763522871', 'GURU', true], ['6281255369012', 'Ash', true], ['']] //Number of owners
 
 //global.pairingNumber = "" //put your bot number here
 
@@ -54,7 +54,7 @@ global.APIKeys = {
 
 // Sticker WM
 global.botname = 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ'
-global.premium = 'true'
+global.premium = 'file'
 global.packname = 'GURU┃ᴮᴼᵀ'
 global.author = 'ᴳᵘʳᵘ ˢᵉⁿˢᵉⁱ'
 global.menuvid = 'https://i.imgur.com/AjDzGgG.mp4'
@@ -77,7 +77,7 @@ global.multiplier = 69
 global.maxwarn = '3'
 
 let file = fileURLToPath(import.meta.url)
-watchFile(file, () => {
+watchFile(true, () => {
   unwatchFile(file)
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
